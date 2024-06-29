@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tela inteira verticalmente */
+    margin: 0;
+    background-color: #0f1414; /* Cor de fundo do body */
+    flex-direction: column; /* Para centralizar os botões abaixo do canvas */
+  }
+
+  h1 {
+  color: hwb(214 1% 43%);
+  font-family: 'Stencil', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #00172bfd;
+  animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00c3ff, 0 0 30px #00c3ff, 0 0 40px #00c3ff, 0 0 50px #00c3ff;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c3ff, 0 0 50px #00c3ff, 0 0 60px #00c3ff, 0 0 70px #00c3ff;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00c3ff, 0 0 30px #00c3ff, 0 0 40px #00c3ff, 0 0 50px #00c3ff;
+  }
+}
+
+
+  #gameCanvas {
+    border: 1px solid black; /* Borda para o canvas */
+    background: #140B67;
+    background: linear-gradient(to top, #140B67 0%, #000000 100%);
+  }
+
+  .testbutton {
+    font-family: impact, fantasy;
+    color: #14396A !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+    cursor: pointer;
+    margin-top: 20px; /* Espaçamento acima do botão */
+  }
+
+  .testbutton:hover {
+    color: #14396A !important;
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+  }
