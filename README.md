@@ -13,3 +13,9 @@ Este é um clássico jogo da cobrinha onde você controla uma cobra que cresce a
 - `index.html`: Estrutura principal do jogo.
 - `styles.css`: Estilos para o jogo e botões.
 - `script.js`: Lógica do jogo.
+
+## Tecnologias Utilizadas
+- HTML
+- CSS
+- JavaScript
+- IA
