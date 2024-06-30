@@ -2,10 +2,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Tela inteira verticalmente */
+    height: 100vh; 
     margin: 0;
-    background-color: #0f1414; /* Cor de fundo do body */
-    flex-direction: column; /* Para centralizar os botões abaixo do canvas */
+    background-color: #0f1414; 
+    flex-direction: column; 
   }
 
   h1 {
@@ -31,7 +31,7 @@ body {
 
 
   #gameCanvas {
-    border: 1px solid black; /* Borda para o canvas */
+    border: 1px solid black;
     background: #140B67;
     background: linear-gradient(to top, #140B67 0%, #000000 100%);
   }
@@ -48,7 +48,7 @@ body {
     background: #63B8EE;
     background: linear-gradient(to top, #63B8EE, #468CCF);
     cursor: pointer;
-    margin-top: 20px; /* Espaçamento acima do botão */
+    margin-top: 20px; 
   }
 
   .testbutton:hover {
