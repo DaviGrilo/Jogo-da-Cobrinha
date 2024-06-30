@@ -40,7 +40,7 @@ function update() {
     snake.slice(1).some((segment) => segment.x === snake[0].x && segment.y === snake[0].y)
   ) {
     gameRunning = false; 
-    clearInterval(gameInterval); // Para o intervalo de atualização do jogo
+    clearInterval(gameInterval); 
     alert('Game over!');
 
     
