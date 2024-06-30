@@ -6,7 +6,7 @@ let snake = [{ x: 10, y: 10 }];
 let snakeSize = 1;
 let food = { x: 5, y: 5 };
 let direction = 'right';
-let gameRunning = false; // Flag para controlar se o jogo está rodando
+let gameRunning = false; 
 
 function drawSnake() {
   ctx.fillStyle = 'green';
@@ -23,7 +23,7 @@ function drawFood() {
 function update() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  if (!gameRunning) return; // Se o jogo não estiver rodando, não atualize
+  if (!gameRunning) return; 
 
   let head = { x: snake[0].x, y: snake[0].y };
   if (direction === 'right') head.x++;
@@ -39,11 +39,11 @@ function update() {
     snake[0].y >= canvas.height / 20 ||
     snake.slice(1).some((segment) => segment.x === snake[0].x && segment.y === snake[0].y)
   ) {
-    gameRunning = false; // Marca o jogo como não rodando
+    gameRunning = false; 
     clearInterval(gameInterval); // Para o intervalo de atualização do jogo
     alert('Game over!');
 
-    // Mostra o botão de restart
+    
     document.getElementById('restartButton').style.display = 'block';
   }
 
@@ -71,7 +71,6 @@ function handleInput(event) {
 document.addEventListener('keydown', handleInput);
 
 function startGame() {
-  // Esconde o botão de start e mostra o canvas
   document.getElementById('startButton').style.display = 'none';
   canvas.style.display = 'block';
 
@@ -86,6 +85,6 @@ function restartGame() {
   food = { x: 5, y: 5 };
   direction = 'right';
   gameRunning = true;
-  document.getElementById('restartButton').style.display = 'none'; // Esconde o botão de restart
+  document.getElementById('restartButton').style.display = 'none';
   gameInterval = setInterval(update, 100); // Reinicia o intervalo de atualização do jogo
 }
