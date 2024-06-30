@@ -1,4 +1,5 @@
 Projeto simples desenvolvido com HTML, CSS e JavaScript.
+
 Este é um clássico jogo da cobrinha onde você controla uma cobra que cresce ao comer comida. O objetivo é crescer o máximo possível sem colidir com as paredes ou consigo mesma.
 
 ## Como jogar
