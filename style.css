@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh; 
     margin: 0;
-    background-color: #0f1414; 
+    background-color: #0f1414;
     flex-direction: column; 
   }
 
@@ -29,10 +29,11 @@ body {
   }
 }
 
- #score {
+  #score {
   font-size: 1.5em;
   color: white;
 }
+
 
   #gameCanvas {
     border: 1px solid black;
@@ -52,7 +53,7 @@ body {
     background: #63B8EE;
     background: linear-gradient(to top, #63B8EE, #468CCF);
     cursor: pointer;
-    margin-top: 20px; 
+    margin-top: 20px;
   }
 
   .testbutton:hover {
